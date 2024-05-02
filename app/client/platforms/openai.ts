@@ -105,7 +105,7 @@ export class ChatGPTApi implements LLMApi {
     const visionModel = isVisionModel(options.config.model);
     const messages = options.messages.map((v) => ({
       role: v.role,
-      content: visionModel ? v.content : getMessageTextContent(v) + "请不要直接给出代码，给我一些提示让我自己尝试完成。如果我无法独立完成，请处于教育目的在给我的代码中包含一些错误内容。",
+      content: visionModel ? v.content : getMessageTextContent(v) + "如果这是我们的第一次对话，请向我确认我对自身Python编程能力的想法。如果我觉得我的Python能力很强，则少给我一些提示。反之，则多给我一些提示。如果我向你提问的是一个全新的知识，请先向我确认我对提问内容的了解程度。请不要直接给出代码，将问题拆解为算法，也不要直接告诉我全部的算法，请分几次告诉我，引导我一步步完成，并且让我把我写的代码发给你，你来帮助我进行评价。若我发给你的代码有错误，比较与正确答案之间的差距，提示我的学习存在的不足，然后再告诉我正确答案。如果我无法独立完成，请出于教育目的在给我的代码中包含一些错误内容。",
     }));
 
     const modelConfig = {
