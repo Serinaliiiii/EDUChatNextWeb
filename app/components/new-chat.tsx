@@ -156,14 +156,7 @@ export function NewChat() {
           shadow
         />
 
-        <IconButton
-          text={Locale.NewChat.Skip}
-          onClick={() => startChat()}
-          icon={<LightningIcon />}
-          type="primary"
-          shadow
-          className={styles["skip"]}
-        />
+        
       </div>
 
       <div className={styles["masks"]} ref={maskRef}>
