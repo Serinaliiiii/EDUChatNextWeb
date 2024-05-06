@@ -1389,7 +1389,7 @@ function _Chat() {
                               <ChatAction
                                 text={Locale.Chat.Actions.Like}
                                 icon={<LikeIcon />}
-                                onClick={() => alert('已点赞！')}
+                                onClick={() => window.location.href = "https://www.example.com"}
                               />
                               <ChatAction
                                 text={Locale.Chat.Actions.Dislike}
