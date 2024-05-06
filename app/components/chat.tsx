@@ -1389,12 +1389,12 @@ function _Chat() {
                               <ChatAction
                                 text={Locale.Chat.Actions.Like}
                                 icon={<LikeIcon />}
-                                onClick={() => window.location.href = "https://www.example.com"}
+                                onClick={() => window.open("https://edu.cudb.net/Like.aspx")}
                               />
                               <ChatAction
                                 text={Locale.Chat.Actions.Dislike}
                                 icon={<DislikeIcon />}
-                                onClick={() => window.location.href = "https://www.example.com"}
+                                onClick={() => window.open("https://edu.cudb.net/Dislike.aspx")}
                               />
                             </>
                           )}
