@@ -1,0 +1,40 @@
+{
+  "UserName": "test",
+  "MessagesNumber": 1,
+  "data": {
+    "Messages_1": {
+      "MessagesName": "编程助手",
+      "MessagesUpdateDate": 1715062164212,
+      "MessagesData": [
+        {
+          "id": "FFNvM5x_K-u4b2B3QXeNp",
+          "date": "2024/5/7 14:07:31",
+          "role": "user",
+          "content": "你好"
+        },
+        {
+          "id": "7nPJijtpVlQNa8Os1szxh",
+          "date": "2024/5/7 14:07:31",
+          "role": "assistant",
+          "content": "你好！对于新的知识，我们先来确认一下你对Python编程的了解程度。你之前是否有过Python编程的经验？",
+          "streaming": false,
+          "model": "gpt-3.5-turbo"
+        },
+        {
+          "id": "ZoUBIQ7Ubz1Tyrhg_JNrR",
+          "date": "2024/5/7 14:09:08",
+          "role": "user",
+          "content": "我要学习matplotlib"
+        },
+        {
+          "id": "IFXzxWzO39pdK8G0hF-5x",
+          "date": "2024/5/7 14:09:08",
+          "role": "assistant",
+          "content": "了解，让我们开始学习matplotlib吧！首先，你对matplotlib有何了解？你知道它是用来做什么的吗？",
+          "streaming": false,
+          "model": "gpt-3.5-turbo"
+        }
+      ]
+    }
+  }
+}
